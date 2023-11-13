@@ -38,7 +38,7 @@ def login_user(user: model.model.UserCreate, db: Session = Depends(get_db)):
     if (checkUsername is not None) :
         getPass = pwd_context.verify(user.password, checkUsername.password)
         if getPass:
-             return {"suceess" : True , "massage" : "Succes"}
+             return {"suceess" : True , "massage" : "Succes1"}
         else :
              return {"suceess" : False , "massage" : "Password missmatch"}
     else :
